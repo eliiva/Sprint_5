@@ -1,12 +1,8 @@
 import pytest
 import random
 import string
-from locators import login_and_reg_button
-from locators import no_account_button
-from locators import input_for_email
-from locators import input_for_password
-from locators import input_for_repeat_password
-from locators import create_account_button
+from locators import login_and_reg_button, no_account_button, input_for_email, input_for_password, input_for_repeat_password, create_account_button
+from urls import main_page_url
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -16,7 +12,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 def driver():
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.get("https://qa-desk.stand.praktikum-services.ru/")
+    driver.get(main_page_url)
 
     yield driver
     driver.quit()
@@ -45,7 +41,7 @@ def user(valid_email):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get("https://qa-desk.stand.praktikum-services.ru/")
+    driver.get(main_page_url)
 
     driver.find_element(By.XPATH, login_and_reg_button).click()
     WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((By.XPATH, no_account_button)))

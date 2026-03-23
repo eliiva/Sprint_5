@@ -1,16 +1,5 @@
 import pytest
-from locators import login_and_reg_button
-from locators import no_account_button
-from locators import input_for_email
-from locators import input_for_password
-from locators import input_for_repeat_password
-from locators import create_account_button
-from locators import user_name
-from locators import user_avatar
-from locators import error_message
-from locators import div_for_email_input
-from locators import div_for_password_input
-from locators import div_for_repeat_password_input
+from locators import login_and_reg_button, no_account_button, input_for_email, input_for_password, input_for_repeat_password, create_account_button, user_name, user_avatar, error_message, div_for_email_input, div_for_password_input, div_for_repeat_password_input
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait

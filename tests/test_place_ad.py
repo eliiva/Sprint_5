@@ -1,21 +1,5 @@
 import pytest
-from locators import login_and_reg_button
-from locators import input_for_email
-from locators import input_for_password
-from locators import place_ad_button
-from locators import modal_header
-from locators import login_button
-from locators import goods_name_input
-from locators import goods_description_textarea
-from locators import goods_price_input
-from locators import dropdown_list_buttons
-from locators import books_category_button
-from locators import city_category_button
-from locators import radiobuttons_list
-from locators import place_ad_submit_button
-from locators import user_avatar
-from locators import placed_ad_name
-
+from locators import login_and_reg_button, input_for_email, input_for_password, place_ad_button, modal_header, login_button, goods_name_input, goods_description_textarea, goods_price_input, dropdown_list_buttons, books_category_button, city_category_button, radiobuttons_list, place_ad_submit_button, user_avatar, placed_ad_name
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
